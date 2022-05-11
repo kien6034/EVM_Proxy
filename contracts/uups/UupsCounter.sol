@@ -6,7 +6,7 @@ import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
 
-contract uPizza is Initializable, UUPSUpgradeable, OwnableUpgradeable {
+contract UupsCounter is Initializable, UUPSUpgradeable, OwnableUpgradeable {
    uint256 public counter;
   
       ///@dev no constructor in upgradable contracts. Instead we have initializers

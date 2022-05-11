@@ -3,9 +3,8 @@ const { ethers, upgrades } = hardhat;
 
 const COUNTER = 1;
 async function main() {
-  
   const ProxyFactory = await ethers.getContractFactory(
-    'TransparentCounter',
+    'UupsCounter',
   );
 
   // Deploy contract proxy
@@ -14,11 +13,14 @@ async function main() {
       COUNTER
     ],
     {
-      initializer: '__Counter_init'
+      initializer: 'initialize'
+    },
+    {
+        kind: "uups"
     });
   const counter = await proxy.deployed();
 
-  console.log("counter contract address at: ", counter.address);
+  console.log("uups counter proxy deloyed at: ", counter.address);
 
 }
 
