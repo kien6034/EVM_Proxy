@@ -22,8 +22,12 @@ What is contract upgradable? How can we upgrade the contract?
 Transparent proxy implements a proxy contract that is upgradable via proxy an admin
 <p>
   <li> If any account other than the admin calls the proxy, the call will be forwarded to the implementation 
+  <img src="data/image/transparent/userCall"/>
   <li> If the admin call the proxy, it can access the admin function, but it calls will never go to the implemenetation
 </p>
+
+### UUPS Proxy 
+
 
 ![TransparentProxy](data/image/transparent/transparentProxy.png)
 
