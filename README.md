@@ -3,20 +3,29 @@
 This contract contains the script and source code demo for a better understanding of Proxy in EVM, as well as providing scripts to use Openzeppelin Upgradable Proxy using Hardhat 
 
 Three criterias: 
-- Raw proxy
 - Transparent Proxy 
 - UUPS Pattern
 
 ### Abstract 
-What is proxy ?? 
+What is contract upgradable? How can we upgrade the contract? 
 
-![TestImage](data/image/proxy1.png)
+- Migrate contract V1 -> V2 
+- ... 
+- Proxy Upgrade using delegate call
 
-### Dependencies 
+![BeforeUpgrade](data/image/abstract/proxy1.png)
 
+![UpgradeToNewImpl](data/image/transparent/proxy2.png)
 
+### Transparent Proxy 
 
-### Contracts
+Transparent proxy implements a proxy contract that is upgradable via proxy an admin
+<p>
+  <li> If any account other than the admin calls the proxy, the call will be forwarded to the implementation 
+  <li> If the admin call the proxy, it can access the admin function, but it calls will never go to the implemenetation
+</p>
+
+![TransparentProxy](data/image/transparent/transparentProxy.png)
 
 
 
