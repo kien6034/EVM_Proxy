@@ -51,6 +51,11 @@ The upgrability function is implemented in the implementation contract.
 
 
 ### Appendixes
- - https://docs.openzeppelin.com/contracts/3.x/api/proxy
- - https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/proxy
+ - Upgradable pattern: https://docs.openzeppelin.com/upgrades-plugins/1.x/proxies
+ - Openzeppelin proxy docs: https://docs.openzeppelin.com/contracts/3.x/api/proxy
+ - Openzeppelin proxy github: https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/proxy
+ - Malicious backdoor: https://medium.com/nomic-foundation-blog/malicious-backdoors-in-ethereum-proxies-62629adf3357
+ - Using UUPS: https://blog.logrocket.com/using-uups-proxy-pattern-upgrade-smart-contracts/
+
+  
 
