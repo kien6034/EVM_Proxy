@@ -38,13 +38,11 @@ The upgrability function is implemented in the implementation contract.
 
 
 ### Comparision 
-- Gas cos 
-![gasCost](data/image/comparision/gas.png)
 
-- General
-| Security                                            | Transparent Proxy                                              | UUPS Proxy                                                                                                                        |
+
+| Security                                            | Transparent Proxy                                      | UUPS Proxy                                                                                                                        |
 | --------------------------------------------------- | ------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------- |
-| Deployment Fee |  ~ 1200k gas limit |  390k gas limit |
+| Deployment Fee                                      |  ~ 1200k gas limit                                     |  390k gas limit                                           |
 | Implementation Deployment | + 0 | + 320 k gas limit |
 | Runtime overhead | 7.3k | 4.9k |
 
