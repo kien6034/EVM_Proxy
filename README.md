@@ -42,9 +42,11 @@ The upgrability function is implemented in the implementation contract.
 
 | Security                                            | Transparent Proxy                                      | UUPS Proxy                                                                                                                        |
 | --------------------------------------------------- | ------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------- |
-| Deployment Fee                                      |  ~ 1200k gas limit                                     |  390k gas limit                                           |
-| Implementation Deployment | + 0 | + 320 k gas limit |
+| Deployment Fee                                      |  ~ 1200k                                               |  390k limit                                           |
+| Implementation Deployment | + 0 |+ 320k |
 | Runtime overhead | 7.3k | 4.9k |
+| Implementation process | Complex + risk of killing upgrades | Easy to implement + no risk of killing upgrades |
+| Security | Avoid Clasing Selector | Avoid Clasing Selector |
 
 
 
